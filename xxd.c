@@ -216,7 +216,7 @@ static int huntype __P((FILE *, FILE *, FILE *, int, int, long));
 static void xxdline __P((FILE *, char *, int));
 
 #define TRY_SEEK	/* attempt to use lseek, or skip forward by reading */
-#define COLS 256	/* change here, if you ever need more columns */
+#define COLS 32768	/* change here, if you ever need more columns */
 #define LLEN (12 + (9*COLS-1) + COLS + 2)
 
 char hexxa[] = "0123456789abcdef0123456789ABCDEF", *hexx = hexxa;
